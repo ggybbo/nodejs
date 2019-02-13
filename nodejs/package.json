@@ -1,0 +1,11 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "Lecture Code",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "ggybbo",
+  "license": "MIT"
+}
