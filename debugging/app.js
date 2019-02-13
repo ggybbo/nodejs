@@ -1,7 +1,9 @@
 const http = require('http');
 
-const server = http.createServer((req, res) => {
-  // debugging에 대해서 학습
-});
+const routes = require('./routes');
+
+console.log(routes.someText);
+
+const server = http.createServer(routes.handler);
 
 server.listen(3000);
