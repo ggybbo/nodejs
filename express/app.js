@@ -5,7 +5,9 @@ const Handlebar = require('express-handlebars');
 
 const app = express();
 
-app.set('view engine', 'pug');
+app.engine('hbs', Handlebar());
+app.set('view engine', 'hbs');
+// app.set('view engine', 'pug');
 app.set('views', 'views'); // default 'views'
 
 const adminRoutes = require('./routes/admin');
