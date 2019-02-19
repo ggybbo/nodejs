@@ -51,7 +51,9 @@ module.exports = class Product {
     getProductFromFile(products => {
       const updatedProduct = products.filter(p => p.id !== id);
       fs.writeFile(p, JSON.stringify(updatedProduct), err => {
-        
+        if (!err) {
+          
+        }
       });
     });
   }
